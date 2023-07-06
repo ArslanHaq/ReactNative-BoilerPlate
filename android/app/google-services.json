@@ -7,18 +7,18 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:560072577161:android:d2fafca6ee4bf80df03658",
+        "mobilesdk_app_id": "1:560072577161:android:192e91d03062d9fef03658",
         "android_client_info": {
-          "package_name": "com.boilerplatereactnative"
+          "package_name": "com.reactnative.boilerplate"
         }
       },
       "oauth_client": [
         {
-          "client_id": "560072577161-3k3mav07p1i5kib96b46cdav03lq4a50.apps.googleusercontent.com",
+          "client_id": "560072577161-cji1fd9m7e9v77bl8rselo0rurccfshd.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.boilerplatereactnative",
-            "certificate_hash": "9ee5fe00aa0cbec253bfd6376efd4327b339c337"
+            "package_name": "com.reactnative.boilerplate",
+            "certificate_hash": "b2961423cd32589d85b73ee6e2893ca8018438f2"
           }
         },
         {

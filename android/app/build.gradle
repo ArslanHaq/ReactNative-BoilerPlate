@@ -1,7 +1,6 @@
 apply plugin: "com.android.application"
-apply plugin: "com.google.gms.google-services"
 apply plugin: "com.facebook.react"
-
+apply plugin: "com.google.gms.google-services"
 import com.android.build.OutputFile
 
 /**
@@ -96,7 +95,7 @@ android {
 
     namespace "com.boilerplatereactnative"
     defaultConfig {
-        applicationId "com.boilerplatereactnative"
+        applicationId "com.reactnative.boilerplate"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -155,6 +154,7 @@ dependencies {
     implementation("com.facebook.react:react-android")
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.0.0")
     implementation 'androidx.appcompat:appcompat:1.1.0-rc01'
+    implementation platform('com.google.firebase:firebase-bom:29.0.3')
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}")
     debugImplementation("com.facebook.flipper:flipper-network-plugin:${FLIPPER_VERSION}") {
         exclude group:'com.squareup.okhttp3', module:'okhttp'
@@ -169,3 +169,4 @@ dependencies {
 }
 
 apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
+

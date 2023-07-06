@@ -32,7 +32,7 @@ export const SignUpComponent: React.FC<Props> = ({navigation}) => {
   const [isPasswordFocused, setIsPasswordFocused] =
     React.useState<boolean>(false);
 
-  const {register} = useContext(AuthContext);
+  const {register, googleSignIn} = useContext(AuthContext);
 
   return (
     <View>
@@ -131,7 +131,7 @@ export const SignUpComponent: React.FC<Props> = ({navigation}) => {
         <Text style={styles.lineStyle}>----------------</Text>
       </View>
       <View>
-        <SignUpIconContainerComponent />
+        <SignUpIconContainerComponent onGooglePress={() => googleSignIn()} />
       </View>
       <View style={styles.alreadyContainer}>
         <Text style={styles.alreadyText}>Already have an account? </Text>

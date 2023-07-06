@@ -22,7 +22,7 @@ export const LoginComponent: React.FC<Props> = ({navigation}) => {
   const [isEmailFocused, setIsEmailFocused] = React.useState<boolean>(false);
   const [isPasswordFocused, setIsPasswordFocused] =
     React.useState<boolean>(false);
-  const {user, login} = useContext(AuthContext);
+  const {user, login, googleLogin} = useContext(AuthContext);
   return (
     <View>
       <View>
@@ -102,7 +102,7 @@ export const LoginComponent: React.FC<Props> = ({navigation}) => {
         <Text style={styles.lineStyle}>----------------</Text>
       </View>
       <View>
-        <SignUpIconContainerComponent />
+        <SignUpIconContainerComponent onGooglePress={() => googleLogin()} />
       </View>
       <View style={styles.alreadyContainer}>
         <Text style={styles.alreadyText}>Already have an account? </Text>

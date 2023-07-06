@@ -9,6 +9,10 @@ export const HomeScreen: React.FC = () => {
   return (
     <View style={styles.container}>
       <Text>Home Screen</Text>
+      <Text>{user.email}</Text>
+      <Text>{user.name}</Text>
+      <Text>{user.id}</Text>
+
       <FullWidthButton
         text="Logout"
         onPress={() => {
